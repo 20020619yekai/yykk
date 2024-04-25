@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <link rel="stylesheet" href="myCSS.css" > 
+<style>
+  *{
+    margin: 10px;
+    text-align: center;
+  }
+header{
+  height: 200px;
+  border: 2px solid blue;
+  font-size: 1.6em;
+}
+nav{
+  height: 100px;
+  border: 2px solid blue;
+  font-size: 1.6em;
+
+}
+main{
+  height: 400px;
+  border: 2px solid blue;
+  font-size: 1.6em;
+  background-image: url(./lesson/CSS.jpg);
+  background-size: cover;
+}
+footer{
+  height: 200px;
+  border: 2px solid blue;
+  font-size: 1.6em;
+
+}
+</style>
+  <title> "读好书、练思维、爱编程" </title>
+ </head> 
+ <body>
+  <header>
+
+      计算思维系列课程@masterLijh
+    
+  </header>
+  <nav>
+    <button>导航一</button>
+    <button>导航二</button>
+    <button>导航三</button>
+  </nav>
+  <main id = 'main'>
+  hhh
+  </main> 
+
+  <footer> 
+
+    CopyRight from 叶凯 江西科技师范大学 2025
+
+  </footer> 
+
+  <script> 
+    var UI = {};
+    UI.appWidth = window.innerWidth;
+    UI.appHeight = window.innerHeight;
+    let baseFont = UI.appWidth / 50;
+    //通过更改body对象的字体大小，这个属性能够遗传其子子孙孙
+    document.body.style.fontSize = baseFont + "px"; 
+    //通过把body对象的高度设置为设备/屏幕的高度，实现纵向全屏。
+    //通过CSS对子对象百分比（纵向）的配合，从而实现响应式设计的目标。
+    document.body.style.height = UI.appHeight - 70 + "px";
+ </script>
+ </body>
+</html>
